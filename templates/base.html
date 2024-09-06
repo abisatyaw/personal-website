@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="luxury">
+<html lang="en" data-theme="night">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,34 +14,20 @@
 
     <!-- Content -->
     <main class="flex-grow flex flex-col items-center">
-
-
         <!-- Hero Section -->
         <div class="flex-grow flex items-center justify-center text-center">
-            <div class="max-w-md">
+            <div class="max-w-4xl w-full"> <!-- Increased max-width -->
                 <!-- Real Navigation Bar -->
                 <nav class="flex justify-center space-x-2 mb-2 pt-4">
-                    <a href="#summary" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full">About</a>
-                    <a href="#resume" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full">Resume</a>
-                    <a href="#projects" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full">Projects</a>
+                    <a href="{{ url_for('index') }}#summary" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full dark:hover:border-sky-500 dark:border-white focus:outline-none hover:text-sky-600 hover:border-sky-600 dark:hover:text-sky-500">About</a>
+                    <a href="{{ url_for('resume') }}" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full dark:hover:border-sky-500 dark:border-white focus:outline-none hover:text-sky-600 hover:border-sky-600 dark:hover:text-sky-500">Resume</a>
+                    <a href="{{ url_for('projects') }}" class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full dark:hover:border-sky-500 dark:border-white focus:outline-none hover:text-sky-600 hover:border-sky-600 dark:hover:text-sky-500">Projects</a>
                 </nav>
-
-                <!-- Divider -->
-                <div class="divider my-2"></div>
-                <!-- Centered Image -->
-                <div class="flex justify-center mb-4">
-                    <img class="mask mask-squircle" src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" alt="Centered Image" />
-                </div>
-                <h1 class="text-5xl font-bold mb-4">Hello there</h1>
-                <p class="py-6 mb-4">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-primary">Get Started</button>
-                <!-- Divider -->
-                <div class="divider my-2"></div>
+                <!-- Content Block -->
+                {% block content %}
+                {% endblock %}
                 <!-- Real Footer -->
-                <footer class="flex justify-center space-x-4 mb-4">
+                <footer class="flex justify-center space-x-4 mb-4 mt-8">
                     <a href="https://github.com/abisatyaw" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                         <i class="fab fa-github text-2xl"></i>
                     </a>

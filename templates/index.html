@@ -3,38 +3,16 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="w-full max-w-4xl mx-auto text-center">
-    <nav class="flex justify-center space-x-4 mb-8">
-        <a href="#summary" class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">Summary</a>
-        <a href="#resume" class="btn w-64 rounded-full">Resume</a>
-        <a href="#projects" class="btn w-64 rounded-full">Projects</a>
-    </nav>
-
-    <div id="summary" class="mt-8">
-        <h1 class="text-2xl font-bold">Summary About Me</h1>
-        <p class="mt-4">Write a summary about yourself here.</p>
+    <!-- Content -->
+    <!-- Divider -->
+    <div class="divider my-2"></div>
+    <!-- Centered Image -->
+    <div class="flex justify-center p-2 mb-4">
+        <img class="mask mask-squircle" src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" alt="Centered Image" />
     </div>
+    <h1 class="text-5xl font-semibold mb-4">WIRATAMA ABISATYA</h1>
 
-    <div id="resume" class="mt-8">
-        <h1 class="text-2xl font-bold">Resume</h1>
-        <p class="mt-4">Upload or display your CV or resume here.</p>
-    </div>
-
-    <div id="projects" class="mt-8">
-        <h1 class="text-2xl font-bold">Projects</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Example project card -->
-            <div class="card bg-base-100 shadow-lg mx-auto">
-                <div class="card-body text-center">
-                    <h2 class="card-title">Project 1</h2>
-                    <p>Brief description of the project.</p>
-                    <button class="btn btn-primary mt-2" hx-get="/project-details/1" hx-target="#project-details">View Details</button>
-                </div>
-            </div>
-            <!-- Add more project cards here -->
-        </div>
-    </div>
-
-    <div id="project-details" class="mt-8"></div>
-</div>
+     <h2 class="text-lg tracking-widest text-center">EMBEDDED SYSTEMS DEVELOPER</h2>
+    <!-- Divider -->
+    <div class="divider my-2"></div>
 {% endblock %}

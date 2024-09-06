@@ -23,4 +23,4 @@ allow-direct-references = true
 packages = ["src/personal_site"]
 
 [tool.rye.scripts]
-tw = "pnpm exec tailwindcss -i ./static/css/tailwind.css -o ./static/css/style.css -- watch"
+tw = "pnpm exec tailwindcss -i ./static/css/tailwind.css -o ./static/css/style.css --watch"
