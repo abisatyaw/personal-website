@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 dependencies = [
     "flask>=3.0.3",
+    "waitress>=3.0.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -25,3 +26,5 @@ packages = ["src/personal_site"]
 [tool.rye.scripts]
 tw = "pnpm exec tailwindcss -i ./static/css/tailwind.css -o ./static/css/style.css --watch"
 dev = "rye run python app.py"
+server = "rye run python server.py"
+
