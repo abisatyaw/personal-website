@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiratama Abisatya</title>
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/htmx.min.js') }}" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body class="h-screen flex flex-col">
-    <!-- Header (blank) -->
-    <header class="flex-grow-10"></header>
 
+<body class="h-screen flex flex-col">
     <!-- Content -->
     <main class="flex-grow flex flex-col items-center">
         <!-- Hero Section -->
@@ -26,7 +24,7 @@
                 <!-- Content Block -->
                 {% block content %}
                 {% endblock %}
-                <!-- Real Footer -->
+                <!-- Footer -->
                 <footer class="flex justify-center space-x-4 mb-4 mt-8">
                     <a href="https://github.com/abisatyaw" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                         <i class="fab fa-github text-2xl"></i>
@@ -44,8 +42,5 @@
             </div>
         </div>
     </main>
-
-    <!-- Footer (blank) -->
-    <footer class="flex-grow-0"></footer>
 </body>
 </html>

@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}Home{% endblock %}
-
 {% block content %}
     <!-- Content -->
     <!-- Divider -->
@@ -10,9 +8,9 @@
     <div class="flex justify-center p-2 mb-4">
         <img class="mask mask-squircle" src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" alt="Centered Image" />
     </div>
-    <h1 class="text-5xl font-semibold mb-4">WIRATAMA ABISATYA</h1>
+    <h1 class="text-5xl font-semibold mb-4">{{resume.name}}</h1>
 
-     <h2 class="text-lg tracking-widest text-center">EMBEDDED SYSTEMS DEVELOPER</h2>
+     <h2 class="text-lg tracking-widest text-center">{{resume.title}}</h2>
     <!-- Divider -->
     <div class="divider my-2"></div>
 {% endblock %}

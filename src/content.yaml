@@ -1,0 +1,59 @@
+name: Wiratama Abisatya
+title: Embedded System Developer
+description: Detaill-oriented and highly passionate in building quality products from 0 to 1.
+location: Cikarang, Indonesia
+
+about: >
+  As a Full Stack Engineer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.
+
+social_links:
+  - platform: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://linkedin.com/in/example"
+  - platform: GitHub
+    icon: "fab fa-github"
+    url: "https://github.com/example"
+  - platform: Twitter
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/example"
+  - platform: Email
+    icon: "fas fa-envelope"
+    url: "mailto:example@example.com"
+
+work_experience:
+  - company: Parabol
+    location: Remote
+    role: Senior Full Stack Developer
+    duration: 2021-2024
+    description: |
+      Implemented new features, led squads, worked on improving the way developers ship code, started migration from Emotion to Tailwind CSS and more.
+    technologies: React, TypeScript, GraphQL
+  - company: Parabol
+    location: Remote
+    role: Senior Full Stack Developer
+    duration: 2021-2024
+    description: |
+      Implemented new features, led squads, worked on improving the way developers ship code, started migration from Emotion to Tailwind CSS and more.
+    technologies: React, TypeScript, GraphQL
+  # Add more work experience...
+
+education:
+  - degree: Bachelor's Degree in Control Systems Engineering and Robotics
+    institution: Wroclaw University of Technology
+    location: Bandung, Indonesia
+    years: 2007-2010
+
+skills:
+  - JavaScript
+  - TypeScript
+  - React
+  - Node.js
+  - GraphQL
+  - WebRTC
+
+projects:
+  - name: Consultly
+    description: A platform to build and grow your online business.
+    technologies: Next.js, Vite, GraphQL
+    link: https://parabol.co
+  # Add more projects...

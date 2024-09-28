@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="text-left">
+    <div class="min-h-screen flex items-center justify-center rounded-lg bg-base-200 p-2">
+        <div class="w-full max-w-4xl bg-base-100 rounded-lg border-4 border-white p-8">
+            <!-- Header -->
+            <header class="mb-8 flex justify-between items-start">
+            <div>
+                <h1 class="text-4xl font-bold mb-2">{{ resume.name }}</h1>
+                <p class="text-lg text-base-content/70 mb-2">{{ resume.description }}</p>
+                <p class="text-base-content/70 mb-2">{{ resume.location }}</p>
+            </div>
+            <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 ml-4">
+                <!-- <img src="{{ url_for('static', filename='images/your-photo.jpg') }}" alt="Wiratama Abisatya" class="w-full h-full object-cover" -->
+                <img class="mask mask-squircle" src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" alt="Centered Image" />
+            </div>
+            </header>
+
+            <!-- About Section -->
+            <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">About</h2>
+            <p class="text-base-content/80">
+                {{resume.about}}
+            </p>
+            </section>
+
+            <!-- Work Experience Section -->
+             
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+                {% for job in resume.work_experience %}
+                <div class="mb-6">
+                    <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
+                        <h3 class="text-xl font-semibold">{{ job.company }}</h3>
+                        <p class="flex-shrink-0 text-base-content/60">{{ job.location }}</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
+                        <p class="font-medium">{{ job.role }}</p>
+                        <p class="text-base-content/60"> {{ job.duration }}</p>
+                    </div>
+                        <p class="text-base-content/80 mb-2">{{ job.description }}</p>
+                        <p class="text-sm"><span class="font-medium">Technologies:</span> {{ job.technologies }} </p>
+                </div>
+            {% endfor %}
+            </section>
+            
+            <!-- Education Section -->
+            <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            {% for edu in resume.education %}
+            <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2">
+                <h3 class="text-xl font-semibold">{{edu.intstitution}}</h3>
+                <p class="text-base-content/70">{{edu.location}}</p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2">
+                <p class="font-medium">{{edu.degree}}</p>
+                <p class="text-base-content/70">{{edu.years}}</p>
+            </div>
+            {% endfor %}
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                {% for skill in resume.skills %}
+                <span class="px-2 py-1 bg-base-300 text-base-content/80 text-sm rounded">{{ skill }}</span>
+                {% endfor %}
+            </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section>
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="space-y-4">
+                <div>
+                {% for project in resume.projects %}
+                <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2 items-baseline mb-1">
+                    <h3 class="text-xl font-semibold">{{project.name}}</h3>
+                    <a href={{project.link}} class="text-primary hover:underline">{{project.name}}</a>
+                </div>
+                <p class="text-base-content/80 mb-2">{{project.description}}</p>
+                <p><span class="font-medium">Technologies:</span> {{project.technologies}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            </section>
+        </div>
+    </div>
+</main>
+{% endblock %}
