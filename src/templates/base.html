@@ -26,18 +26,11 @@
                 {% endblock %}
                 <!-- Footer -->
                 <footer class="flex justify-center space-x-4 mb-4 mt-8">
-                    <a href="https://github.com/abisatyaw" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                        <i class="fab fa-github text-2xl"></i>
+                    {% for social in resume.social_links %}
+                    <a href="{{ social.url }}" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i class="{{ social.icon }} text-2xl"></i>
                     </a>
-                    <a href="https://x.com/Aaskaft" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                        <i class="fab fa-x-twitter text-2xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/abisatya/" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
-                    <a href="mailto:abisatya90@gmail.com" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                        <i class="fas fa-envelope text-2xl"></i>
-                    </a>
+                    {% endfor %}
                 </footer>
             </div>
         </div>

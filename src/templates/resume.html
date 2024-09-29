@@ -50,11 +50,11 @@
             <h2 class="text-2xl font-bold mb-4">Education</h2>
             {% for edu in resume.education %}
             <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2">
-                <h3 class="text-xl font-semibold">{{edu.intstitution}}</h3>
+                <h3 class="text-xl font-semibold">{{edu.institution}}</h3>
                 <p class="text-base-content/70">{{edu.location}}</p>
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2">
-                <p class="font-medium">{{edu.degree}}</p>
+                <p class="font-medium text-base-content">{{edu.degree}}</p>
                 <p class="text-base-content/70">{{edu.years}}</p>
             </div>
             {% endfor %}
@@ -65,27 +65,27 @@
             <h2 class="text-2xl font-bold mb-4">Skills</h2>
             <div class="flex flex-wrap gap-2">
                 {% for skill in resume.skills %}
-                <span class="px-2 py-1 bg-base-300 text-base-content/80 text-sm rounded">{{ skill }}</span>
+                <span class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-base-200 text-secondary-foreground hover:bg-secondary/60 px-2 py-1 bg-base-300 text-base-content/80 text-sm rounded">{{ skill }}</span>
                 {% endfor %}
             </div>
             </section>
 
             <!-- Projects Section -->
-            <section>
+            <!-- <section>                
             <h2 class="text-2xl font-bold mb-4">Projects</h2>
             <div class="space-y-4">
                 <div>
                 {% for project in resume.projects %}
-                <div class="flex flex-col sm:flex-row justify-between items-baseline mb-2 items-baseline mb-1">
+                <div class="flex flex-col sm:flex-row justify-between items-baseline items-baseline ">
                     <h3 class="text-xl font-semibold">{{project.name}}</h3>
                     <a href={{project.link}} class="text-primary hover:underline">{{project.name}}</a>
                 </div>
-                <p class="text-base-content/80 mb-2">{{project.description}}</p>
-                <p><span class="font-medium">Technologies:</span> {{project.technologies}}</p>
+                <p class="text-base-content/80">{{project.description}}</p>
+                <p><span class="font-medium">Technologies:</span> {{project.tags}}</p>
                 </div>
                 {% endfor %}
             </div>
-            </section>
+            </section> -->
         </div>
     </div>
 </main>

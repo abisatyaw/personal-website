@@ -4,56 +4,78 @@ description: Detaill-oriented and highly passionate in building quality products
 location: Cikarang, Indonesia
 
 about: >
-  As a Full Stack Engineer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.
+  As an Embedded System Developer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best.
+  Also have a keen interest in Fullstack Application Development.
 
 social_links:
   - platform: LinkedIn
     icon: "fab fa-linkedin"
-    url: "https://linkedin.com/in/example"
+    url: "https://www.linkedin.com/in/abisatya/"
   - platform: GitHub
     icon: "fab fa-github"
-    url: "https://github.com/example"
+    url: "https://github.com/abisatyaw"
   - platform: Twitter
-    icon: "fab fa-twitter"
-    url: "https://twitter.com/example"
+    icon: "fab fa-x-twitter text-2xl"
+    url: "https://x.com/Aaskaft"
   - platform: Email
     icon: "fas fa-envelope"
-    url: "mailto:example@example.com"
+    url: "mailto:abisatya90@gmail.com"
 
 work_experience:
-  - company: Parabol
-    location: Remote
-    role: Senior Full Stack Developer
-    duration: 2021-2024
+  - company: PT. Indonesia Epson Industry
+    location: Cikarang. Indonesia
+    role: Firmware Design Staff
+    duration: 2022 - Present
     description: |
-      Implemented new features, led squads, worked on improving the way developers ship code, started migration from Emotion to Tailwind CSS and more.
-    technologies: React, TypeScript, GraphQL
-  - company: Parabol
-    location: Remote
-    role: Senior Full Stack Developer
-    duration: 2021-2024
+      Follow up new printer development, Implemented new features, Unit and Integrated testing, Regular firmware evaluation to comply with industry standard
+    technologies: C, C++, Python, Perforce, Redmine
+  - company: PT. Logicom Integrasi Technologies
+    location: Bandung, Indonesia
+    role: Hardware Engineer
+    duration: 2021-2022
     description: |
-      Implemented new features, led squads, worked on improving the way developers ship code, started migration from Emotion to Tailwind CSS and more.
-    technologies: React, TypeScript, GraphQL
-  # Add more work experience...
+      Developed Laptop Merah Putih, Deliver High-Speed PCB Design and layout based on Raspberry Pi Compute Module 4, Developed various IoT System and Application
+    technologies: C, C++, Python, Raspberry Pi, ESP32, OrCAD Capture, Allegro
+
 
 education:
-  - degree: Bachelor's Degree in Control Systems Engineering and Robotics
-    institution: Wroclaw University of Technology
+  - degree: Bachelor's Degree in Electrical and Electronic Engineering
+    institution: Telkom University
     location: Bandung, Indonesia
-    years: 2007-2010
+    years: 2018-2022
 
 skills:
+  - C / C++
+  - Python
   - JavaScript
-  - TypeScript
-  - React
-  - Node.js
-  - GraphQL
-  - WebRTC
+  - HTML
+  - CSS
+  - IoT Application
+  - PCB Design
+  - ESP32
+
 
 projects:
-  - name: Consultly
-    description: A platform to build and grow your online business.
-    technologies: Next.js, Vite, GraphQL
+  - name: AcneScan
+    description: Android app to classify acne type and provide product reccomendations.
+    tags: 
+    - Python
+    - TensorFlow
+    - Android Studio
     link: https://parabol.co
-  # Add more projects...
+
+  - name: Tello Face Follow
+    description: DJI Tello auto follow mode based on face recognition
+    tags: 
+    - Python
+    - OpenCV
+    - Websocket
+    link: https://parabol.co
+
+  - name: Laptop Merah Putih
+    description: Prototype Chromebook Laptop based on Raspberry Pi Compute Module 4
+    tags: 
+    - Allegro
+    - OrCAD
+    - C/C++
+    link: https://parabol.co

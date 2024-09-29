@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.justify-text::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
