@@ -10,10 +10,20 @@
         <div class="flex flex-col space-y-1.5">
             <div class="space-y-1">
                 <h3 class="font-semibold tracking-tight text-base">
-                    <a href="{{project.link}}" target="_blank"class="inline-flex items-center gap-1 hover:underline">
-                        {{project.name}}<span class="size-1 rounded-full bg-green-500"></span>
+                    {% if project.link %}
+                    <!-- If project.link exists, show clickable link and green dot -->
+                    <a href="{{project.link}}" target="_blank" class="inline-flex items-center gap-1 hover:underline">
+                        {{project.name}}
+                        <span class="size-1 rounded-full bg-green-500"></span>
                     </a>
-                </h3>
+                    {% else %}
+                        <!-- If project.link is None, just display the project name and red dot -->
+                        <span class="inline-flex items-center gap-1">
+                            {{project.name}}
+                            <span class="size-1 rounded-full bg-red-500"></span>
+                        </span>
+                    {% endif %}
+                    </h3>
                 <div class="hidden font-mono text-xs underline">evercast.us</div>
                 <p class="text-muted-foreground font-mono text-xs">
                     {{project.description}}

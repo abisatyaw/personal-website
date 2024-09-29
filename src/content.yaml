@@ -62,7 +62,7 @@ projects:
     - Python
     - TensorFlow
     - Android Studio
-    link: https://parabol.co
+    link: https://github.com/abisatyaw/Acne-Scan
 
   - name: Tello Face Follow
     description: DJI Tello auto follow mode based on face recognition
@@ -70,7 +70,7 @@ projects:
     - Python
     - OpenCV
     - Websocket
-    link: https://parabol.co
+    link: #none
 
   - name: Laptop Merah Putih
     description: Prototype Chromebook Laptop based on Raspberry Pi Compute Module 4
@@ -78,4 +78,4 @@ projects:
     - Allegro
     - OrCAD
     - C/C++
-    link: https://parabol.co
+    link: #none
