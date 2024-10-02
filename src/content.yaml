@@ -61,7 +61,7 @@ projects:
     tags: 
     - Python
     - TensorFlow
-    - Android Studio
+    - Firebase
     link: https://github.com/abisatyaw/Acne-Scan
 
   - name: Tello Face Follow
@@ -69,8 +69,8 @@ projects:
     tags: 
     - Python
     - OpenCV
-    - Websocket
-    link: #none
+    - DJI-Tello
+    link: https://github.com/abisatyaw/tello-face-follow
 
   - name: Laptop Merah Putih
     description: Prototype Chromebook Laptop based on Raspberry Pi Compute Module 4
