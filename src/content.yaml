@@ -56,6 +56,15 @@ skills:
 
 
 projects:
+  - name: Personal-wehsite
+    description: This Website.
+    tags: 
+    - Python
+    - Flask
+    - Tailwindcss
+    - HTMX
+    link: https://github.com/abisatyaw/personal-website
+
   - name: AcneScan
     description: Android app to classify acne type and provide product reccomendations.
     tags: 
