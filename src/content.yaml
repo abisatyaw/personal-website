@@ -1,6 +1,6 @@
 name: Wiratama Abisatya
 title: Embedded System Developer
-description: Detaill-oriented and highly passionate in building quality products from 0 to 1.
+description: Detaill-oriented and highly passionate in building quality products from zero to launch.
 location: Cikarang, Indonesia
 
 about: >
@@ -50,27 +50,32 @@ skills:
   - JavaScript
   - HTML
   - CSS
+  - Fullstack WebApp
   - IoT Application
   - PCB Design
+  - Arduino
   - ESP32
 
 
 projects:
-  - name: Personal-wehsite
+  - name: Personal-website
     description: This Website.
     tags: 
     - Python
     - Flask
     - Tailwindcss
     - HTMX
+    - NGINX
+    - Linux
     link: https://github.com/abisatyaw/personal-website
 
   - name: AcneScan
-    description: Android app to classify acne type and provide product reccomendations.
+    description: Android app to classify acne type and provide product recommendations.
     tags: 
     - Python
     - TensorFlow
     - Firebase
+    - Google Collab
     link: https://github.com/abisatyaw/Acne-Scan
 
   - name: Tello Face Follow
